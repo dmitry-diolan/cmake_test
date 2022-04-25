@@ -6,12 +6,14 @@ cmake_minimum_required (VERSION 3.8)
 include(cmake/first_script.cmake)
 
 
+
+
 test_context()
 
 set(CXX_STANDARD_REQUIRED ON) # Make c++20 a hard requirement
 set(CMAKE_CXX_STANDARD 20) #Default c++ standard fro targets
 
-project ("cmake_demo"
+project ("cmake_test"
 	VERSION 1.0
 	DESCRIPTION "An attemp to build different kinds or projects using cmake"
 )

@@ -9,11 +9,12 @@
   "configurePresets": [
 	{
 	  "name": "c-sharp",
-	  "description": "Defines .Net frameworkg target version, in the future cmake can fix autodetection of .Net framework and we can remove this",
+	  "description": "Defines .Net framework target version, in the future cmake can fix autodetection of .Net framework and we can remove this",
 	  "hidden": true,
 	  "cacheVariables": {
-		"DOTNET_TARGET_FRAMEWORK_VERSION": ".NET 6.0"
+		"CMAKE_DOTNET_TARGET_FRAMEWORK_VERSION": "v4.8"
 	  }
+
 
 	},
 	{
@@ -105,6 +106,7 @@
 	  "name": "win-x64",
 	  "description": "Configures Windows x86 architecture",
 	  "inherits": "win-base",
+	  "hidden": true,
 	  "architecture": {
 		"value": "x64",
 		"strategy": "set"
